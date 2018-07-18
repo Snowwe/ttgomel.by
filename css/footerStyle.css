@@ -1,0 +1,128 @@
+/*задаем гриды для адаптации футера*/
+.ourSponsors {
+    grid-area: ourSponsors;
+    padding: 30px 0 30px 0;
+}
+
+.gomselmash {
+    grid-area: gomselmash;
+    background: url("../images/footer/logo_gom2.png") no-repeat 50% 50%;
+    display: block; /*  Рисунок как блочный элемент */
+    width: 220px;
+    height: 38px;
+}
+
+.gomselmash:hover {
+    background: url("../images/footer/logo_gom.png") no-repeat;
+}
+
+.belneft {
+    grid-area: belneft;
+    background: url("../images/footer/logo_bel2.png") no-repeat 50% 50%;
+    display: block; /*  Рисунок как блочный элемент */
+    width: 239px;
+    height: 38px;
+}
+
+.belneft:hover {
+    background: url("../images/footer/logo_bel.png") no-repeat;
+}
+
+.contactTelFooter {
+    grid-area: contactTelFooter;
+}
+
+.contactEmailFooter {
+    grid-area: contactEmailFooter;
+}
+
+.contactAddressFooter {
+    grid-area: contactAddressFooter;
+}
+
+.year {
+    grid-area: year;
+}
+
+.design {
+    grid-area: disign;
+}
+
+.development {
+    grid-area: development;
+}
+
+.footer-container {
+    background-color: #b2c1ca;
+    color: #424040;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.sponsors {
+    background-color: #dcdcdc;
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas: "ourSponsors ourSponsors" "gomselmash belneft";
+    grid-template-columns: auto;
+    grid-template-rows: 60px 60px;
+}
+
+.contactFooter {
+    background-color: #dcdcdc;
+    font-size: 15px;
+    justify-content: space-around;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "contactTelFooter contactEmailFooter contactAddressFooter";
+    grid-template-columns: auto;
+    grid-template-rows: 45px;
+}
+
+.copyright {
+    background-color: #547689;
+    padding: 15px;
+    font-size: 13px;
+    justify-content: space-around;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "year development disign ";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.copyright a {
+    color: #002752;
+    font-style: italic;
+    /*text-decoration: underline #005cbf;*/
+}
+
+.copyright a:hover {
+    color: #dcdcdc;
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 480px) {
+    .sponsors {
+        display: grid;
+        grid-template-areas: "ourSponsors" "gomselmash" "belneft";
+        /*grid-template-columns: auto;*/
+        grid-template-rows: 70px 50px 50px;
+    }
+
+    .contactFooter {
+        display: grid;
+        grid-template-areas: "contactTelFooter" "contactEmailFooter" "contactAddressFooter";
+        grid-template-rows: 35px 35px 35px;
+    }
+
+    .copyright {
+        display: grid;
+        grid-template-areas: "year" "development" "disign";
+    }
+}
+
+
+
+

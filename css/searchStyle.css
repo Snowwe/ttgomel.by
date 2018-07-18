@@ -1,0 +1,69 @@
+#search {
+    /* устанавливаем ширину формы,
+    ** равную ширине поля ввода (183 + 37 + 15)	*/
+    /*width: 235px;*/
+    height: 29px;
+}
+
+/* делаем инпуты плавающими, чтобы убрать лишние отступы,
+** и отключаем бордюры */
+#search input {
+    float: left;
+    border: none;
+}
+
+.search {
+    border: 1px solid #d6dcdf;
+}
+/* стили для поля ввода */
+#search .input {
+    width: 180px;
+    height: 29px;
+    /* внутренний отступ справа (29px) делаем больше левого,
+    ** т.к. там будет размещена кнопка отправки	*/
+    padding: 0 29px 1px 15px;
+    background:#547689;
+    color: #a9b7c0;
+    /*font: 13px/28px 'Open Sans', regular;*/
+    outline: none;
+
+}
+
+/* приходится использовать хак для FireFox
+** для вертикального выравнивания текста,
+** т.к. у него свои особые представления об этом */
+@-moz-document url-prefix() {
+    #search .input {
+        height: 27px;
+        padding-bottom: 2px;
+    }
+}
+
+/* меняем оформление поля ввода при фокусе */
+#search .input:focus {
+    background-color:#d6dcdf ;
+    background-position: 0 -29px;
+    color: #272626;
+    border: 1px solid #2c5d8c;
+}
+
+/* оформляем кнопку отправки */
+#search .submit {
+    width: 37px;
+    height: 29px;
+    cursor: pointer;
+    /* смещаем кнопку влево на собственную ширину, чтобы она оказалась над полем ввода */
+    margin-left: -37px;
+    /* по-нормальному, здесь достаточно было бы указать background: none; но приходится указывать фон из-за бага в IE */
+    background: no-repeat url("../images/header/searchICO.png") ;
+
+}
+
+.searchPage{
+    min-height: 300px;
+}
+/*@media screen and (max-width: 715px) {*/
+    /*#search .input {*/
+        /*width: 180px;*/
+    /*}*/
+/*}*/

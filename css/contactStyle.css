@@ -1,0 +1,142 @@
+.ourContact {
+    grid-area: ourContact;
+
+}
+
+.contactTelName {
+    grid-area: contactTelName;
+}
+
+.imgTelContact {
+    grid-area: imgTelContact;
+
+}
+/*.contactTelName:hover{*/
+    /*background: url("../../images/whatsapp_viber_telegram_1.jpg") no-repeat;*/
+
+/*}*/
+.contactTelContact {
+    display: grid;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    grid-template-areas: "imgTelContact contactTelName";
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: auto;
+}
+
+.payMe {
+    grid-area: payMe;
+}
+
+.feedback {
+    grid-area: feedback;
+    max-width: 400px;
+    padding: 2%;
+    border-radius: 2px;
+    background: #eaeef1;
+    margin-left: 20px;
+}
+
+.feedback [required] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2px 0 2% 0;
+    padding: 2%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 transparent;
+}
+
+.feedback [required]:hover {
+    border-color: #7eb4ea;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 transparent;
+}
+
+.feedback [required]:focus {
+    outline: none;
+    border-color: #7eb4ea;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .2) inset, 0 0 4px rgba(35, 146, 243, .5);
+    transition: .2s linear;
+}
+
+.feedback [type="submit"] {
+    padding: 2%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2) inset;
+    background: #547689;
+    color: #fffefe;
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    display: grid;
+    margin: 30px auto 25px;;
+}
+
+.feedback[type="submit"]:hover {
+    background: #5c90c2;
+}
+
+.feedback [type="submit"]:focus {
+    box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0, 0, 0, .8), inset 0 -1px 0 rgba(0, 0, 0, .05);
+}
+
+.contactFromContacts hr {
+    width: 80%;
+    margin-bottom: 7%;
+}
+
+.mapClub {
+    grid-area: mapClub;
+    margin: 0 -5% 5% -5%;
+}
+
+/*.mapClub h3 {*/
+    /*margin: 0 5% 5% 5%;*/
+/*}*/
+
+.contactFromContacts {
+    text-align: justify;
+    display: grid;
+    padding-top: 40px;
+    grid-template-areas: "ourContact feedback" "payMe feedback" "mapClub mapClub";
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+}
+
+.contactFromContacts h3 {
+    padding: 30px 0 15px 0;
+
+}
+
+/*input{*/
+/*width: 90%;*/
+/*margin: auto;*/
+/*}*/
+.feedbackHead {
+    text-align: center;
+    padding: 5%;
+}
+
+.contactFromContacts img {
+    padding-right: 5%;
+
+}
+
+@media screen and (max-width: 650px), only screen and (max-device-width: 600px){
+  .contactFromContacts{
+      margin: 5% 0;
+      text-align: justify;
+      display: grid;
+      padding-top: 40px;
+      grid-template-areas: "ourContact" "feedback" "payMe" "mapClub";
+      grid-template-columns: auto;
+
+  }
+    .feedback{
+        margin: 5% 0;
+    }
+
+
+
+}

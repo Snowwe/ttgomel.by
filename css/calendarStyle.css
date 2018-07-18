@@ -1,0 +1,70 @@
+.calendar {
+
+}
+
+.calendar h2 {
+    padding: 2%;
+    text-align: center;
+}
+
+.calendar hr {
+    width: 90%;
+    margin: auto;
+}
+
+.calendar caption {
+    padding: 5% 0 2.5%;
+    font-size: 115%;
+    font-weight: 800; /*начертание Extra Bold (Ultra Bold)*/
+}
+
+.calendar table {
+    min-width: 800px;
+    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+    border-bottom: 3px solid #dcdcdc; /*устанавливаем для таблицы нижнюю границу толщиной 3px*/
+}
+
+.calendar th, td {
+    padding: 10px 15px;
+    /*border: 1px solid grey;*/
+}
+
+.calendar th{
+    background: #dcdcdc;
+}
+.rowsInfo.color{
+    background: #dcdcdc;
+}
+.calendar .rowsInfo:hover {
+    background: #b2c1ca;
+}
+
+.name {
+    width: 45%;
+}
+
+.date {
+    width: 94px;
+}
+
+.participants {
+    width: 85px;
+}
+
+/**/
+.calendarFileDownload{
+    padding-top: 2%;
+}
+.calendarFileDownload p {
+    font-size: 85%;
+    margin-top: 1.5%;
+}
+
+.calendarFileDownload a{
+    text-decoration: underline;
+}
+
+.calendarFileDownload a:hover{
+    color: #7f96a4;
+    text-decoration: underline #7f96a4;
+}

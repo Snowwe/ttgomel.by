@@ -1,0 +1,141 @@
+/*задаем гриды для адаптации страницы*/
+.aboutUs {
+    grid-area: aboutUs;
+    padding-right: 2%;
+}
+
+.newsShort {
+    grid-area: newsShort;
+    padding-left: 3%;
+}
+
+.sportRoom {
+    grid-area: sportRoom;
+}
+
+.tourney {
+    grid-area: tourney;
+}
+
+.inventory {
+    grid-area: inventory;
+}
+
+/*ширина картинок на главной странице*/
+main img {
+    width: 54%;
+    max-width: 470px;
+}
+
+.imgSportRoom {
+    grid-area: imgSportRoom;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.imgTourney {
+    grid-area: imgTourney;
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+
+.imgInventory {
+    grid-area: imgInventory;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+main h3 {
+    padding-bottom: 15px;
+}
+
+main {
+    text-align: justify;
+}
+
+.main_1 {
+    display: grid;
+    padding-top: 40px;
+    grid-template-areas: "aboutUs newsShort";
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+}
+
+.main_2,
+.main_3,
+.main_4 {
+    display: grid;
+    padding-top: 40px;
+    grid-template-areas: "sportRoom" "inventory";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.top-container {
+    background: url(../images/main/banner_web.gif) no-repeat;
+    padding-top: 25%;
+    padding-bottom: 10%;
+    background-size: 100%;
+    margin-top: -5%;
+}
+
+.aboutUs a,
+.tourney a,
+.inventory a {
+    color: #002752;
+    font-style: italic;
+    /*text-decoration: underline #005cbf;*/
+}
+
+.aboutUs a:hover,
+.tourney a:hover,
+.inventory a:hover {
+    color: #2c5d8c;
+}
+
+.short_news_item a {
+}
+
+.title_news_item:hover,
+.short_news_item a:hover {
+    color: #7f96a4;
+    text-decoration: underline #7f96a4;
+}
+.newsShort{
+    text-align: left;
+}
+.short_news_item{
+    padding-bottom: 15px;
+}
+.title_news_item{
+    font-size: 95%;
+}
+.dateNews {
+    font-size: 75%;
+}
+@media screen and (max-width: 710px), only screen and (max-device-width: 480px) {
+    .top-container{
+        margin-top: 3%;
+    }
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .main_1 {
+        display: grid;
+        padding-top: 40px;
+        grid-template-areas: "newsShort""aboutUs";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .aboutUs {
+        padding-right: 0;
+    }
+
+    .newsShort {
+        padding-left: 0;
+    }
+    .top-container {
+        margin-top: -4%;
+    }
+}

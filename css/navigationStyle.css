@@ -1,0 +1,167 @@
+.menu {
+    background-color: #d6dcdf;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*меню*/
+.menu a {
+    background-color: #d6dcdf;
+    color: #272626;
+    font-size: 16px;
+    padding: 10px 25px ;
+}
+
+ul {
+    display: flex;
+}
+
+/*активное меню*/
+a.current_menu,
+.menu a:hover
+{
+    background-color: #547689;
+    color: #fffefe;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+@media screen and (max-width: 710px){
+    .menu {
+        position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+        width: 100%;
+        padding-left: 10px;
+        justify-content: left;
+        z-index: 2;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu li {
+        width: 100%;
+        display: block;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 6px;
+    }
+
+    .toggle-button {
+        text-align: -moz-center;
+        display: block;
+        cursor: pointer;
+        color: #272626;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+
+    .header-container a {
+        margin-right: -65px;
+    }
+
+    .main-menu {
+        text-align: left;
+        position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+        right: 10px;
+    }
+}
+@media only screen and (max-device-width: 680px) {
+    .menu{
+        padding-left: 0;
+    }
+    .menu a {
+        padding: 20px 10px;
+        font-size: x-large;
+    }
+}
+
+@media only screen and (max-device-width: 280px) {
+    .menu {
+        position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+        width: 100%;
+        padding: 12px 0 5px 10px;
+        justify-content: left;
+        z-index: 2;
+    }
+    .menu a {
+        padding: 10px 25px;
+        font-size: x-large;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 16px;
+    }
+
+    .main-menu a {
+        display: block;
+        margin: 20px 25px;
+
+    }
+
+    .toggle-button {
+        text-align: -moz-center;
+        display: block;
+        cursor: pointer;
+        color: #272626;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+
+    .header-container a {
+        margin-right: -65px;
+    }
+
+    .main-menu {
+        text-align: left;
+        position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+        right: 10px;
+    }
+}

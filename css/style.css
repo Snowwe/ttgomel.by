@@ -1,0 +1,71 @@
+* {
+    font-family: 'Open Sans', regular;
+    color: #272626;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin: 3% 8% 5% 8%;
+}
+
+.btn-up {
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #c6c8ca;
+    z-index: 100; /* чтоб была поверх всех элементов на странице*/
+    outline: 0 !important;
+}
+
+.btn-up:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #c6c8ca;
+    border-left: 2px solid #c6c8ca;
+    transform: rotate(45deg);
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nav.active{
+    position: fixed; /* привязывается к указанной точке на экране и не меняет своего положения при прокрутке веб-страницы */
+    top: 0; /* точка привязки на экране */
+    z-index: 50;
+    width: 100%;
+    justify-content: center;
+}
+.btn-up.active {
+    bottom: 39%;
+}
+
+/*ссылки на страницах на сайт http://bttf.by*/
+.bttf p{
+    padding-top: 3.5%;
+    font-style: italic;
+    color: #2c5d8c;
+}
+
+.bttf a{
+    text-decoration: underline;
+}
+
+.bttf a:hover{
+    color: #7f96a4;
+    text-decoration: underline #7f96a4;
+}
+
+@media  only screen and (max-device-width: 480px) {
+    section {
+        margin: 3% 4% 5% 4%;
+
+    }
+
+}

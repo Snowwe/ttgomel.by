@@ -1,0 +1,114 @@
+.imgNews {
+    width: 100%;
+}
+
+.titleNews {
+    text-decoration: underline #547689;
+    padding-bottom: 20px;
+}
+
+.titleNews:hover {
+    color: #547689;
+}
+
+.dateNews {
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+    bottom: 1px;
+    font-size: 90%;
+}
+
+.news_container {
+    display: grid;
+    grid-template-areas: "news" "pages";
+    grid-template-rows: auto;
+}
+
+.news {
+    grid-area: news;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news_item {
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+    margin-bottom: 2%;
+    padding: 1% 1% 0 1%;
+    width: 31%;
+    background: #f1f3f5;
+}
+
+.pages {
+    grid-area: pages;
+    margin-top: 5%;
+}
+
+.pages a {
+    text-decoration: underline;
+    color: #2c5d8c;
+}
+
+.pages a:hover {
+    color: #7f96a4;
+    text-decoration: underline #7f96a4;
+}
+
+a.currentPage {
+    color: #002752;
+}
+
+/*страница с одной новостью*/
+.full_news_item {
+
+}
+
+.imgFullNews {
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+    margin: 3% 1% 3% 0;
+    width: 23.5%;
+}
+
+.imgFullNewsFirst {
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+    margin: 0 3% 1% 0;
+    width: 35%;
+    max-height: 320px;
+    float: left;
+}
+
+.full_news_item hr {
+    margin-bottom: 10px;
+}
+
+.contentFullNews {
+    text-align: justify;
+    margin-top: 4%;
+    min-height: 320px;
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 480px) {
+    .news_item {
+        /*при ширине окна менее 640 и мобильного 480 - расположить по два элемента*/
+        width: 45%;
+        padding-top: 20px;
+    }
+    .news{
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 490px), only screen and (max-device-width: 240px) {
+    .news_container {
+        /*направление флекс элементов - в колонку*/
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .news_item {
+        /*при ширине окна менее 490 и мобильного 240 - расположить по одному элементу*/
+        width: 100%;
+    }
+
+}

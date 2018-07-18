@@ -1,0 +1,166 @@
+.gallery hr {
+    margin-bottom: 40px;
+}
+
+.gallery h3 {
+    padding-top: 35px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 255px;
+}
+
+/*.gallery img:hover{*/
+/*—moz-transform: scale(1.6); !* эффект трансформации для Firefox до версии 16.0 *!*/
+/*—webkit-transform: scale(1.6); !* эффект трансформации для Chrome до версии 26.0, Safari, Android и iOS *!*/
+/*—o-transform: scale(1.8); !* эффект трансформации для Opera до версии 12.10 *!*/
+/*—ms-transform: scale(1.8); !* эффект трансформации для IE 9.0 *!*/
+/*transform: scale(1.8); !* эффект трансформации для других браузеров *!*/
+/*border: 10px;*/
+/*}*/
+
+/*задаём гриды для адаптации страницы*/
+.trainerOne {
+    grid-area: trainerOne;
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas: "imgTrainerOne trainerInfoOne";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.imgTrainerOne {
+    grid-area: imgTrainerOne;
+}
+
+.trainerInfoOne {
+    grid-area: trainerInfoOne;
+    padding-left: 4%;
+}
+
+.gallery p {
+    font-size: 85%;
+    padding-top: 6%;
+}
+
+.trainerTwo {
+    grid-area: trainerTwo;
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-areas: "imgTrainerTwo trainerInfoTwo";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.imgTrainerTwo {
+    grid-area: imgTrainerTwo;
+}
+
+.trainerInfoTwo {
+    grid-area: trainerInfoTwo;
+    padding-left: 4%;
+
+}
+
+.ourTrainers {
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-areas: "trainerOne trainerTwo";
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+}
+
+/*Спортсмены*/
+.sportsman{
+    max-width: 200px;
+}
+.owl-prev img, .owl-next img {
+    color: white;
+}
+.owl-prev, .owl-next {
+    width: 30px;
+    height: 30px;
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+    top: 50%;
+    margin-top: -10px;
+}
+.owl-prev {
+    left: 5px;
+}
+.owl-next {
+    right: 5px;
+}
+.lb-caption{
+    color: #c6c8ca;
+}
+
+span.fullInfoSportsman,
+.sportsman:hover .infoSportsman {
+    display: none;
+}
+
+span.infoSportsman,
+.sportsman:hover .fullInfoSportsman {
+    display: block;
+    padding: 15px;
+    width: 89%;
+    max-width: 200px;
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+    bottom: 0;
+    background: #ffffff;
+    opacity: 0.65;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+    -khtml-opacity: 0.65;
+    -moz-opacity: 0.65;
+    text-align: center;
+    color: #272626;
+    font-size: 90%;
+}
+
+/*видео*/
+.videos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery iframe {
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+    margin-bottom: 2%;
+    width: 33%;
+}
+.videoTitle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aVideoMore{
+    padding-top: 35px;
+    font-size: 90%;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 480px) {
+    .ourTrainers {
+        justify-content: space-around;
+        display: grid;
+        grid-template-areas: "trainerOne" "trainerTwo";
+        grid-template-columns: auto;
+        grid-template-rows: 100%;
+    }
+
+    .trainerOne {
+        padding-bottom: 4%;
+    }
+
+    /*.sportsman {*/
+        /*width: 33%;*/
+    /*}*/
+    .gallery iframe {
+        position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+        margin-bottom: 2%;
+        width: 100%;
+    }
+}

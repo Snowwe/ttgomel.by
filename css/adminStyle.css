@@ -1,0 +1,69 @@
+.form-group input,
+.form-group textarea{
+    width: 99%;
+    height: 20px;
+    /*margin-top: 10px;*/
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+.form-group textarea{
+height: 150px;
+}
+#date{
+    display: inline;
+    width: auto;
+    margin: 10px 0;
+}
+
+input.btn{
+    width: 90%;
+    height: 40px;
+    background: #2c5d8c;
+    color: #c6c8ca;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+input.btn:hover{
+    background: #002752;
+}
+.adminPanel .date{
+    width: 90px;
+}
+.adminPanel button{
+    height: 25px;
+    border-radius: 8px;
+}
+.oneNews:hover{
+    background: #5c90c2;
+}
+.adminPanel a{
+    text-decoration: none;
+    color: #272626;
+}
+.add{
+    display: block;
+    width: 80%;
+    margin: 2% auto;
+    background:#5c90c2;
+}
+.add:hover{
+    background: #2c5d8c;
+}
+.add a:hover{
+    color: #c6c8ca;
+}
+.edit{
+    background: #4DC7A0;
+}
+.del{
+    background: #ff4941;
+}
+/*label.form-item {*/
+    /*width: 50%;*/
+/*}*/
+/*input.form-item {*/
+    /*!*width: 30%;*!*/
+/*}*/

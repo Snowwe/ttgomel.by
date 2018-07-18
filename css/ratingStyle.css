@@ -1,0 +1,19 @@
+.infoRating{
+    padding-top: 7%;
+    text-align: justify;
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+}
+
+.formulaRating{
+    padding-top: 5%;
+}
+.formulaRating h3 {
+    padding-bottom: 15px;
+}
+.formulaRating div{
+    padding-bottom: 6px;
+}
+.formula{
+    color: #2c5d8c;
+    font-size: 110%;
+}
