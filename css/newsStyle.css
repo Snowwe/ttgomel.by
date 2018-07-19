@@ -93,7 +93,8 @@ a.currentPage {
         width: 45%;
         padding-top: 20px;
     }
-    .news{
+
+    .news {
         padding-top: 10px;
     }
 
@@ -110,5 +111,10 @@ a.currentPage {
         /*при ширине окна менее 490 и мобильного 240 - расположить по одному элементу*/
         width: 100%;
     }
+}
 
+@media only screen and (max-device-width: 680px) {
+    .pages {
+        font-size: 28px;
+    }
 }

@@ -68,6 +68,10 @@ $page = "main";
             include_once("pages/search.php");
             break;
 
+        default: echo "<p class='error'>Ошибка 404. Запрашиваемая вами страница не найдена</p>";
+            break;
+
+
     };
 
     ?>

@@ -7,8 +7,14 @@
 
 section {
     margin: 3% 8% 5% 8%;
+    min-height: 300px;
 }
-
+.error{
+    padding-top: 15%;
+    font-size: 120%;
+    color: #002752;
+    text-align: center;
+}
 .btn-up {
     position: fixed;
     bottom: -50px;
